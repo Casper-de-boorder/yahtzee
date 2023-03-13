@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+ <div class="container">  
+<button id="resetGame">Reset</button>
+
+<div class="gameOver isHidden">
+  Game Over
+</div>
+
+<div class="box flex game">
+  <div class="dice"></div>
+  <div class="dice"></div>
+  <div class="dice"></div>
+  <div  class="dice"></div>
+  <div  class="dice"></div>
+  <div class="controls">
+    Beurten
+    <div class="score rolls"></div>
+    <button id="rollDice">Rol</button>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="box box-left">
+    <table class="scores">
+      <tr>
+        <th colspan="4">Eerste deel</th>
+      </tr>
+      <tr>
+        <td colspan="2"><em>score</em></td>
+        <td colspan="2"><em>Current Roll</em></td>
+      </tr>
+      <tr>
+        <td>enen</td>
+        <td><div class="score ones"></div></td>
+        <td><button id="onesSelect">Select</button></td>
+        <td><div class="calculated onesRoll"></div></td>
+      </tr>
+      <tr>
+        <td>tweeën</td>
+        <td><div class="score twos"></div></td>
+        <td><button id="twosSelect">Select</button></td>
+        <td><div class="calculated twosRoll"></div></td>
+      </tr>
+      <tr>
+        <td>drieeën</td>
+        <td><div class="score threes"></div></td>
+        <td><button id="threesSelect">Select</button></td>
+        <td><div class="calculated threesRoll"></div></td>
+      </tr>
+      <tr>
+        <td>vieren</td>
+        <td><div class="score fours"></div></td>
+        <td><button id="foursSelect">Select</button></td>
+        <td><div class="calculated foursRoll"></div></td>
+      </tr>
+      <tr>
+        <td>vijfen</td>
+        <td><div class="score fives"></div></td>
+        <td><button id="fivesSelect">Select</button></td>
+        <td><div class="calculated fivesRoll"></div></td>
+      </tr>
+      <tr>
+        <td>zessen</td>
+        <td><div class="score sixes"></div></td>
+        <td><button id="sixesSelect">Select</button></td>
+        <td><div class="calculated sixesRoll"></div></td>
+      </tr>
+      <tr>
+        <td>Bonus</td>
+        <td><div class="score bonusTotal"></div></td>
+        <td colspan="2" class="note">35 punten extra als totaal gelijk of meer is dan 63</td>
+      </tr>
+      <tr>
+        <td>deel1 Total</td>
+        <td><div class="score leftTotal"></div></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="box box-right">
+    <table class="scores">
+      <tr>
+        <th colspan="4">Tweede deel</th>
+      </tr>
+      <tr>
+        <td colspan="2"><em>score</td>
+        <td colspan="2"><em>huidige Rol</em></td>
+      </tr>
+      <tr>
+        <td>3 of a Kind</td>
+        <td><div class="score kind3"></div></td>
+        <td><button id="kind3Select">Select</button></td>
+        <td><div class="calculated kind3Roll"></div></td>
+      </tr>
+      <tr>
+        <td>4 of a Kind</td>
+        <td><div class="score kind4"></div></td>
+        <td><button id="kind4Select">Select</button></td>
+        <td><div class="calculated kind4Roll"></div></td>
+      </tr>
+      <tr>
+        <td>Full House</td>
+        <td><div class="score fHouse"></div></td>
+        <td><button id="fHouseSelect">Select</button></td>
+        <td><div class="calculated fHouseRoll"></div></td>
+      </tr>
+      <tr>
+        <td>Small Straight</td>
+        <td><div class="score sStraight"></div></td>
+        <td><button id="sStraightSelect">Select</button></td>
+        <td><div class="calculated sStraightRoll"></div></td>
+      </tr>
+      <tr>
+        <td>Large Straight</td>
+        <td><div class="score lStraight"></div></td>
+        <td><button id="lStraightSelect">Select</button></td>
+        <td><div class="calculated lStraightRoll"></div></td>
+      </tr>
+      <tr>
+        <td>Yahtzee</td>
+        <td><div class="score yahtzee"></div></td>
+        <td><button id="yahtzeeSelect">Select</button></td>
+        <td><div class="calculated yahtzeeRoll"></div></td>
+      </tr>
+      <tr>
+        <td>Yahtzee Bonus</td>
+        <td><div class="score yahtzeeB"></div></td>
+        <td><button id="yahtzeeBSelect">Select</button></td>
+        <td><div class="calculated yahtzeeBRoll"></div></td>
+      </tr>
+      <tr>
+        <td>kans</td>
+        <td><div class="score chance"></div></td>
+        <td><button id="chanceSelect">Select</button></td>
+        <td><div class="calculated chanceRoll"></div></td>
+      </tr>
+      <tr>
+        <td>deel2 totaal</td>
+        <td><div class="score rightTotal"></div></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Grand Total</td>
+        <td><div class="score grandTotal"></div></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>    
+  </div>
+</div>
+
+<div class="dice_center">
+  <div class="dice dice-1"></div>
+  <div class="dice dice-2"></div>
+  <div class="dice dice-3"></div>
+  <div class="dice dice-4"></div>
+  <div class="dice dice-5"></div>
+  <div class="dice dice-6"></div>
+</div>
+
+
+
+</div> 
+<script src="script.js"></script>
+  </body>
+ 
+</html>
